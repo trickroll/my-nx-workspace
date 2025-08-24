@@ -1,4 +1,3 @@
-
 import { defineConfig } from 'vite';
 
 export default defineConfig(() => ({
@@ -10,25 +9,15 @@ export default defineConfig(() => ({
   //  plugins: [ nxViteTsPaths() ],
   // },
   test: {
-    ''name'': '@ts-demo/zoo',
-    ''watch'': false,
-    ''globals'': true,
-    ''environment'': "node",
-    ''include'': ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
-    ''reporters'': ["default"],
-    ''coverage'': {
-    'reportsDirectory': './test-output/vitest/coverage',
-    'provider': 'v8' as const,
-},
-    ''reportsDirectory'': './test-output/vitest/coverage',
-    ''provider'': 'v8' as const,
-    'globals': true,
-    'environment': "node",
-    'include': ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
-    'reporters': ["default"],
-    'coverage': {
-    'reportsDirectory': './test-output/vitest/coverage',
-    'provider': 'v8' as const,
-}
+    name: '@ts-demo/zoo',
+    watch: false,
+    globals: true,
+    environment: 'node',
+    include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    reporters: ['default'],
+    coverage: {
+      reportsDirectory: './test-output/vitest/coverage',
+      provider: 'v8' as const,
+    },
   },
 }));
